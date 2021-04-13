@@ -26,6 +26,8 @@
   padding: 0;
   margin: 0;
   border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 * :before,
@@ -179,16 +181,37 @@ body {
   visibility: hidden;
 }
 
+._blocks_title {
+  font-family: Montserrat-Bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #C1C1C1;
+}
+
+._blocks_wrapper {
+  width: 238px;
+  height: 119px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  border: 1px solid #ECECEC;
+}
+
+._blocks_content {
+  padding: 14px 16px 16px 18px;
+  position: relative;
+}
+
 .header h1 {
   font-family: Montserrat-Bold;
   font-size: 42px;
-  padding: 36px 0 25px 157px;
+  padding: 36px 0 25px 25px;
 }
 
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 60px;
 }
 
 .list {
@@ -196,6 +219,7 @@ body {
   border-radius: 10px;
   border: 1px solid #ECECEC;
   background-color: #FFFFFF;
+  padding-bottom: 21px;
 }
 
 .list__top {
@@ -281,3 +305,171 @@ body {
   border-bottom-right-radius: 5px;
   background-color: #F8F8F8;
 }
+
+.list .tr {
+  text-transform: none;
+  font-size: 14px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.list .post {
+  font-size: 14px;
+  font-family: Montserrat-Medium;
+  color: #2dd3fc;
+  padding-left: 20px;
+}
+
+.blocks {
+  padding-left: 30px;
+  margin-top: -26px;
+}
+
+.blocks__weather-title {
+  font-family: Montserrat-Bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #C1C1C1;
+  padding-bottom: 26px;
+}
+
+.blocks__weather {
+  width: 240px;
+  height: 320px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.blocks__weather-content {
+  padding: 20px;
+  width: 240px;
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blocks__weather-content ::before {
+  content: "";
+  background-image: url("../image/bg.png");
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.blocks__weather-top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blocks__weather-subtitle {
+  font-family: Montserrat-Medium;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.blocks__weather-indicator img {
+  margin: 0 0 5px 30px;
+}
+
+.blocks__weather-gr {
+  font-family: Montserrat-Medium;
+  font-weight: 500;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+.blocks__weather-user-img {
+  padding-bottom: 10px;
+}
+
+.blocks__weather-text {
+  font-family: Montserrat-Medium;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+
+.blocks__weather-line {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 1px;
+  margin-bottom: 15px;
+}
+
+.blocks__weather-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blocks__weather-footer p {
+  font-family: Montserrat-Medium;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.blocks__officials-title {
+  padding-top: 34px;
+  padding-bottom: 21px;
+}
+
+.blocks__chief {
+  margin-bottom: 21px;
+}
+
+.blocks__chief-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blocks__whistle-img {
+  position: absolute;
+  right: 19px;
+  top: 22px;
+}
+
+.blocks__chief-text {
+  font-family: Montserrat-Bold;
+  font-size: 12px;
+  color: #C1C1C1;
+  padding-bottom: 10px;
+}
+
+.blocks__chief-name {
+  font-family: Montserrat-Bold;
+  font-size: 16px;
+  color: #021B31;
+  padding-bottom: 18px;
+  line-height: 116.88%;
+}
+
+.webp .blocks__weather-content ::before { background-image: url(../image/bg.webp); }

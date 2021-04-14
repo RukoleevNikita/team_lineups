@@ -132,6 +132,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 2px solid #fff;
 }
 
 ._top_btn img {
@@ -306,14 +307,14 @@ body {
   background-color: #F8F8F8;
 }
 
-.list .tr {
+.tr {
   text-transform: none;
   font-size: 14px;
   text-align: right;
   padding-right: 10px;
 }
 
-.list .post {
+.post {
   font-size: 14px;
   font-family: Montserrat-Medium;
   color: #2dd3fc;
@@ -454,6 +455,12 @@ body {
 .blocks__whistle-img {
   position: absolute;
   right: 19px;
+  top: 22px;
+}
+
+.blocks__whistle-img-flag {
+  position: absolute;
+  right: 0px;
   top: 22px;
 }
 
